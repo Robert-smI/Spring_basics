@@ -1,16 +1,18 @@
 package project.pizzaType;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import project.IPizza;
 
-//@Component
+// @Primary
+@Component
 public class Exotic implements IPizza {
 
     private int price;
     private String name;
 
-    public Exotic(@Value("59") int price, @Value("Hawaii") String name) {
+    public Exotic(@Value("31") int price, @Value("Hawaii") String name) {
         this.price = price;
         this.name = name;
     }

@@ -1,5 +1,6 @@
 package project.orders;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import project.IOrder;
 import project.IPizza;
@@ -10,7 +11,7 @@ public class Order implements IOrder {
     private static IPizza pizza;
 
 
-    public Order(IPizza pizza) {
+    public Order(@Qualifier("goodPizza") IPizza pizza) {
         this.pizza = pizza;
     }
 
