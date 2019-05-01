@@ -2,12 +2,14 @@ package project.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import project.pizzaType.Exotic;
 import project.IOrder;
 import project.IPizza;
 import project.orders.Order;
 
- @Configuration
+
+@Configuration
 public class Config {
 
     @Bean
