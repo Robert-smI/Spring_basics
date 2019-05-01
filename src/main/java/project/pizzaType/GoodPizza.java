@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import project.IPizza;
 
 @Getter
-@Component
+//@Component
 public class GoodPizza implements IPizza {
 
     private int price;

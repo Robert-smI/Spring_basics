@@ -15,6 +15,6 @@ public class Order implements IOrder {
     }
 
     public void printOrder() {
-        System.out.println("project.orders.Order: "+"\""+pizza.getName()+"\"" + ", price: " + pizza.getPrice());
+        System.out.println("Order: "+"\""+pizza.getName()+"\"" + ", price: " + pizza.getPrice());
     }
 }
