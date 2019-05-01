@@ -5,16 +5,17 @@ import org.springframework.context.annotation.Configuration;
 import project.pizzaType.Exotic;
 import project.IOrder;
 import project.IPizza;
-import project.Order;
+import project.orders.Order;
 
-@Configuration
+ @Configuration
 public class Config {
 
     @Bean
     public IPizza createPizza (){
-        return new Exotic(59, "Hawaii");
+        return new Exotic(79, "Hawaii");
     }
-    @Bean(name = "otherOrder")
+
+   // @Bean(name = "otherOrder")
     public IOrder createOrder (IPizza pizza){
         return new Order(pizza);
     }
