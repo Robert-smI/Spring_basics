@@ -1,5 +1,6 @@
 package project.pizzaType;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
@@ -7,6 +8,7 @@ import project.IPizza;
 
 // @Primary
 @Component
+@Qualifier("better")
 public class Exotic implements IPizza {
 
     private int price;
