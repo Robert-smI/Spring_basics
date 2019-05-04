@@ -1,14 +1,16 @@
 package project.pizzaType;
 
+import lombok.Setter;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import project.IPizza;
 
-// @Primary
+@Setter
 @Component
-@Qualifier("better")
+@Qualifier("exo")
+@Primary
 public class Exotic implements IPizza {
 
     private int price;

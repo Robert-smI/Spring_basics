@@ -7,7 +7,7 @@ import project.config.Config;
 
 @Configuration
 @ComponentScan("project.pizzaType, project.orders")
-@Import(Config.class)  // added import to use Bean
+@Import(Config.class)  // added import to use Bean from Config
 public class AutoConfig {
 
 }
